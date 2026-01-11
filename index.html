@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bhabi — Card Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="container">
+    <header>
+      <h1>Bhabi</h1>
+      <div class="controls">
+        <button id="newGameBtn">New Game</button>
+        <button id="dealBtn" disabled>Deal</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="board">
+        <div class="player-area">
+          <h2>You</h2>
+          <div id="playerHand" class="hand"></div>
+        </div>
+
+        <div class="table-area">
+          <h2>Table</h2>
+          <div class="table">
+            <div class="played" id="playerPlayed"></div>
+            <div class="played" id="computerPlayed"></div>
+          </div>
+          <div id="message" class="message">Start a new game to play.</div>
+        </div>
+
+        <div class="computer-area">
+          <h2>Computer</h2>
+          <div id="computerHand" class="hand computer-hand"></div>
+        </div>
+      </section>
+
+      <section class="status">
+        <div class="scoreboard">
+          <div>You: <span id="playerScore">0</span></div>
+          <div>Computer: <span id="computerScore">0</span></div>
+          <div>Rounds left: <span id="roundsLeft">0</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Simple starter — rules are customizable. Tell me the official "Bhabi" rules and I will adapt this.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
